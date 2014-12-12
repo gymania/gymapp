@@ -199,6 +199,8 @@ class login extends simple_module
 			$this->ajax->add_class('form p', 'error');
 			$this->ajax->timer('$("input[type=submit]").val("Войти").removeAttr("disabled");', 10);
 		}
+		
+		$errors[] = "Неверно указана электронная почта или&nbsp;пароль";
 	}
 }
 ?>
